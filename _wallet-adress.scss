@@ -1,0 +1,141 @@
+.registration-main {
+  .container-cabinet {
+    .wrapper {
+      &-wallet {
+        padding-top: 115px;
+      }
+      .congratulations {
+        color: #ffffff;
+        h2 {
+          text-align: left;
+        }
+        h3 {
+          font-size: 23px;
+          font-family: "SofiaProRegular";
+        }
+        h4 {
+          font-family: "SofiaProRegular";
+          padding: 40px 0 94px 0;
+        }
+        .white-button {
+          width: 132px;
+          height: 52px;
+          display: inline-block;
+          margin-left: 20px;
+        }
+        .flex {
+          margin: 40px 0 57px 0;
+        }
+        input {
+          width: 580px;
+          height: 52px; //margin: 40px 0 57px 0;
+          color: #6f6f6f;
+          font-family: "SofiaProRegular";
+          font-size: 16px;
+          padding-left: 20px;
+        }
+        p {
+          font-size: 16px;
+          font-family: "SofiaProRegular";
+          line-height: 25px;
+          color: rgba(255, 255, 255, 0.8);
+          b {
+            display: block;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .right-img {
+        img {
+          width: 427px;
+          height: 575px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .registration-main {
+    .container-cabinet {
+      .wrapper-wallet {
+        justify-content: center;
+        .right-img {
+          display: none;
+        }
+        .congratulations {
+          width: 645px;
+          h2 {
+            font-size: 28px;
+            text-align: center;
+          }
+          h3 {
+            font-size: 21px;
+          }
+          h4 {
+            font-size: 15px;
+            text-align: center;
+            padding: 25px 0 65px 0;
+          }
+          input {
+            width: 473px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 660px) {
+  .registration-main {
+    .container-cabinet {
+      .wrapper-wallet {
+        padding-top: 42px;
+        .congratulations {
+          width: 400px;
+          margin: 0 auto;
+          h2 {
+            font-size: 19px;
+          }
+          h3 {
+            font-size: 19px;
+            text-align: center;
+            line-height: 30px;
+          }
+          h4 {
+            font-size: 14px;
+          }
+          .flex {
+            flex-wrap: wrap;
+            input {
+              width: 279px;
+            }
+            .white-button {
+              margin-top: 20px;
+              margin-left: 0;
+            }
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 420px) {
+  .registration-main {
+    .container-cabinet {
+      padding-bottom: 50px;
+      .wrapper-wallet {
+        .congratulations {
+          width: 300px;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

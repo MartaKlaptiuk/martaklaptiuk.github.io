@@ -1,0 +1,231 @@
+.registration-main {
+  position: relative;
+}
+.searching-opponents {
+  padding-top: 115px;
+  color: #ffffff;
+  position: relative;
+  z-index: 999;
+  .left-arrow-back-container {
+    text-align: left;
+  }
+  .flex {
+    flex-direction: column;
+    margin-top: -39px;
+    img {
+      margin: 53px 0 63px 0;
+    }
+    .white-button-cancel {
+      width: 153px;
+      height: 52px;
+    }
+  }
+}
+.bg-searching-opponents {
+  background: url(../img/ellemets.png) center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-size: 100% 80%;
+}
+
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(22, 151, 247, 0.54);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+
+  h3 {
+    font-size: 26px;
+    color: #000000;
+  }
+  .button-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    a {
+      display: block;
+      color: #000000;
+      width: 155px;
+      height: 50px;
+      border-radius: 25px;
+      text-align: center;
+      line-height: 50px;
+      transition: all 0.3s;
+      &:hover {
+        width: 155px;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 0px 3px 6.4px 0.6px rgba(18, 64, 107, 0.13),
+          inset 0px 2px 0 0 #58b9ff;
+        background-color: #1ea9ff;
+        color: #ffffff;
+      }
+    }
+  }
+}
+.modalDialog:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  position: relative;
+  margin: 25% auto;
+  width: 473px;
+  height: 163px;
+  border-radius: 24px;
+  box-shadow: 0px 11px 24.8px 2.2px rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  padding: 39px 35px 26px 35px;
+}
+
+//pause
+.pause-button {
+  display: flex;
+  a {
+    display: block;
+    width: 161px;
+    height: 52px;
+    line-height: 52px;
+  }
+
+  .back-personal-cabinet {
+    color: #ffffff;
+    transition: all 0.3s;
+    border-radius: 25px;
+    line-height: 52px;
+    &:hover {
+      text-align: center;
+      border-radius: 25px;
+      //line-height: 52px;
+      box-shadow: 0 3px 6px 1px rgba(18, 64, 107, 0.13), inset 0 2px 0 #58b9ff;
+      border-radius: 25px;
+      background-color: #008dfe;
+      color: #ffffff;
+    }
+  }
+}
+
+.left-arrow-back {
+  background: url(../img/icon_left-arrow-white.png) center center no-repeat;
+  width: 37px;
+  background-size: contain;
+  &:after {
+    content: "Back";
+    margin-left: 50px;
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .searching-opponents {
+    padding: 115px 40px 0 40px;
+  }
+  .bg-searching-opponents {
+    background-size: 100% 54%;
+  }
+  .searching-opponents .flex img {
+    width: 532px;
+    height: 357px;
+  }
+  .modalDialog > div {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 770px) {
+  .bg-searching-opponents {
+    background-size: 100% 42%;
+  }
+}
+
+@media (max-width: 620px) {
+  .searching-opponents .left-arrow-back:after {
+    font-size: 15px;
+  }
+  .searching-opponents .flex {
+    h3 {
+      margin-top: 3px;
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 511px) {
+  .bg-searching-opponents {
+    background-position-y: top;
+    margin-top: 51%;
+    background-size: 158% 39%;
+  }
+  .searching-opponents .flex img {
+    width: 340px;
+    height: 261px;
+  }
+  .searching-opponents .left-arrow-back:after {
+    font-size: 10px;
+    margin-left: 32px;
+  }
+  .searching-opponents .left-arrow-back {
+    width: 26px;
+    padding-bottom: 6px;
+  }
+  .searching-opponents .flex {
+    h3 {
+      margin-top: 1px;
+      font-size: 14px;
+    }
+  }
+
+  .modalDialog > div {
+    width: 320px;
+    height: 113px;
+    margin-top: 60%;
+    padding: 20px 15px 16px 15px;
+  }
+}
+@media (max-width: 380px) {
+  .searching-small {
+    min-height: 574px;
+  }
+  .searching-opponents {
+    padding-top: 50px;
+  }
+
+  .searching-opponents .flex {
+    img {
+      width: 240px;
+      height: 161px;
+    }
+    h3 {
+      margin-top: 50px;
+    }
+  }
+  .pause-button .white-button,
+  .pause-button .back-personal-cabinet {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+  }
+  .searching-opponents .flex .white-button-cancel {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 11px;
+  }
+  .flex .modalDialog {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}

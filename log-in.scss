@@ -1,0 +1,90 @@
+.log-in {
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+  p {
+    line-height: 4;
+    font-size: 16px;
+  }
+  .social-log {
+    margin-top: 25px;
+    img {
+      width: 43px;
+      height: 44px;
+    }
+    a:nth-of-type(2) {
+      padding: 0 20px;
+      margin: 0 20px;
+    }
+  }
+  input {
+    width: 416px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+    color: #6f6f6f;
+    font-family: "SofiaProRegular";
+    font-size: 16px;
+    padding: 0 45px 0 20px;
+    margin-bottom: 20px;
+  }
+  .password-log_in {
+    position: relative;
+    i.fas {
+      width: 26px;
+      height: 26px;
+      color: #6f6f6f;
+      text-align: center;
+      right: 13px;
+      top: 21px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+
+  .forgot-password {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: underline;
+    font-family: "SofiaPro";
+    line-height: 3.5;
+    margin-left: 0;
+  }
+  .white-button {
+    width: 138px;
+    height: 52px;
+    margin: 30px auto 0;
+  }
+}
+.left-img-log_in {
+  img {
+    width: 311px;
+    height: 432px;
+  }
+}
+
+.right-img-log_in {
+  img {
+    width: 311px;
+    height: 432px;
+  }
+}
+//forgot password
+.forgot-password {
+  p {
+    line-height: 27px;
+    padding: 40px 0 29px 0;
+  }
+}
+
+@media (max-width: 1060px) {
+  .register-small-bg {
+    //min-height: 674px;
+    background-size: cover;
+    background-position: 30%;
+  }
+}
+@media (max-width: 680px) {
+  .register-small-bg {
+    min-height: 620px;
+  }
+}

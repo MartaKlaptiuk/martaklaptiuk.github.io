@@ -1,0 +1,920 @@
+.personal-cabinet-coupon {
+  background: url(../img/BackGround-form-coupon.png) center bottom no-repeat;
+  background-size: 100% 70%;
+  min-height: 910px;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #f5f6f9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+  }
+  .top-block-coupon {
+    position: relative; // width: 1166px;
+    // margin: 0 auto;
+    .left-img {
+      position: absolute;
+      background: url(../img/vector-smart-object-left.png) center center
+        no-repeat;
+      width: 325px;
+      height: 356px;
+      background-size: contain;
+      top: -31px;
+      left: -17px;
+      z-index: -1;
+    }
+    .right-img {
+      position: absolute;
+      background: url(../img/vector-smart-object-right.png) center bottom
+        no-repeat;
+      width: 305px;
+      height: 368px;
+      background-size: contain;
+      top: -20px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  .play-mode {
+    padding-top: 76px; // &:before {
+    //   content: "";
+    //   background-color: #f5f6f9;
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 500px;
+    //   top: 0;
+    //   left: 0;
+    //   z-index: -1;
+    // }
+    .play-mode-buttons {
+      margin: 51px 0 25px 0;
+      .mobile-text {
+        display: none;
+      }
+      .button-one-vs-one {
+        width: 153px;
+        height: 52px;
+        display: block;
+        box-shadow: 0 3px 9px 1px rgba(18, 64, 107, 0.21), inset 0 2px 0 #58b9ff;
+        border-radius: 25px;
+        background-color: #1ea9ff;
+        color: #ffffff;
+        text-align: center;
+        line-height: 52px;
+        transition: all 0.3s;
+        &:hover {
+          box-shadow: 0 7px 12px 1px rgba(18, 64, 107, 0.6);
+          background-color: #ffffff;
+          color: #1ea9ff;
+        }
+      }
+      .white-button-tournament {
+        width: 180px;
+        height: 52px;
+        pointer-events: none;
+        box-shadow: 0 9px 9px 1px rgba(18, 64, 107, 0.03);
+        border-radius: 24px;
+        background-color: #ffffff;
+        color: #aaaaaa;
+        display: block;
+        text-align: center;
+        line-height: 52px;
+        &:after {
+          content: "In developing";
+          display: block;
+          color: #1279e9;
+          font-size: 16px;
+          font-family: "SofiaPro";
+        }
+      }
+    }
+  }
+}
+
+//modal window
+.modalDialogSettings {
+  position: fixed;
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(22, 151, 247, 0.54);
+  z-index: 99999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  display: none;
+  pointer-events: none;
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .flex {
+    justify-content: space-between;
+    h4 {
+      color: rgba(0, 0, 0, 0.6);
+      font-family: "SofiaProSemiBold";
+      cursor: pointer;
+    }
+    .active-reg {
+      color: rgba(0, 0, 0, 1);
+      font-size: 21px;
+    }
+  }
+  .google-auth-name {
+    width: 100%;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 35px 0 24px 0;
+  }
+  .btn-authentication {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+    a {
+      display: block;
+      width: 191px;
+      height: 63px;
+      background-color: #f1f1f1;
+      border-radius: 12px;
+      margin-left: 0;
+    }
+    .apple-auth,
+    .google-auth {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 63px;
+      padding: 0 20px;
+      text-align: left;
+      color: #000000;
+      p {
+        line-height: 16px;
+      }
+      p:first-child {
+        font-family: "SofiaProRegular";
+        font-size: 13px;
+      }
+    }
+    .apple-auth i {
+      font-size: 38px;
+    }
+    .google-auth img {
+      width: 28px;
+      height: 32px;
+    }
+  }
+  .blue-btn {
+    display: inline-block;
+    width: 142px;
+    height: 53px;
+    line-height: 53px;
+    box-shadow: 0 3px 6px 1px rgba(18, 64, 107, 0.13), inset 0 2px 0 #58b9ff;
+    border-radius: 25px;
+    background-color: #1ea9ff;
+    color: #ffffff;
+    margin-left: 0;
+    margin-top: 20px;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 0 7px 12px 1px rgba(18, 64, 107, 0.3);
+      background-color: #ffffff;
+      color: #1ea9ff;
+    }
+  }
+  .change-password {
+    form {
+      margin-top: 40px;
+    }
+    input {
+      width: 100%;
+      height: 55px;
+      background-color: #f1f1f1;
+      border: none;
+      color: rgba(49, 49, 49, 0.71);
+      font-size: 16px;
+      margin: 20px auto 10px;
+    }
+    .password-log_in i.fas {
+      top: 40px;
+    }
+  }
+}
+
+.modalDialogSettings:target {
+  display: block;
+  pointer-events: auto;
+}
+
+.modalDialogSettings > div {
+  width: 464px;
+  height: 394px;
+  position: relative;
+  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.11);
+  border-radius: 24px;
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 54px 36px 25px 33px;
+}
+
+.closeSettings {
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: 3px;
+  right: 14px;
+}
+
+.modalDialogSettings {
+  .closeSettings {
+    color: #9e9e9e;
+  }
+}
+
+.container-cabinet-coupon {
+  width: 1166px;
+  margin: 160px auto 0 auto;
+  color: #ffffff;
+  .flex {
+    justify-content: space-between;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .your-coupons-and-rank {
+    h3 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 46px;
+      margin: 40px 0;
+      white-space: nowrap;
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .cabinet-coupon-info {
+    p {
+      color: #ffffff;
+      font-family: "SofiaProRegular";
+      font-size: 16px;
+      text-align: left;
+      line-height: 30px;
+    }
+    .white-button-use-them {
+      width: 153px;
+      height: 52px;
+      margin: 10px 0 0 0;
+    }
+  }
+  .ranks {
+    display: flex;
+    justify-content: space-between;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 8px;
+    margin-left: -8px; // border: 1px solid #222;
+    // width: 600px;
+    // height: 170px;
+    // overflow-y: hidden;
+    // overflow-x: scroll;
+    .ranks-block {
+      min-width: 208px;
+      height: 148px;
+      box-shadow: 0 21px 79px 9px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      background-color: #ffffff;
+      padding: 32px 0 28px 22px;
+      position: relative;
+      p {
+        font-size: 22px;
+        color: #000000;
+        font-family: "SofiaPro";
+        line-height: 27px;
+      }
+      .amount-of-coupon {
+        font-family: "SofiaProSemiBold";
+        font-size: 19px;
+      }
+      span {
+        color: rgba(0, 0, 0, 0.57);
+        line-height: 42px;
+      }
+      .rank-icon {
+        position: absolute;
+        right: -25px;
+        top: 39px;
+        z-index: 99;
+        filter: grayscale(100%);
+      }
+      .rookie-icon {
+        background: url(../img/rookie-golden.png) center center no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 60px;
+      }
+      .legionary-icon {
+        background: url(../img/legionary-golden.png) center center no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 60px;
+      }
+      .gastat-icon {
+        background: url(../img/gastat-golden.png) center center no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 73px;
+      }
+      .triaria-icon {
+        background: url(../img/triaria-golden.png) center center no-repeat;
+        background-size: contain;
+        width: 69px;
+        height: 66px;
+      }
+      .centurion-icon {
+        background: url(../img/centurion-golden.png) center center no-repeat;
+        background-size: contain;
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .done {
+      min-width: 222px;
+      height: 160px;
+      box-shadow: 0 9px 13px 1px rgba(7, 35, 56, 0.21),
+        0 0 21px rgba(11, 159, 255, 0.31),
+        inset 0 0 18px 1px rgba(45, 178, 255, 0.16);
+      border-radius: 8px;
+      background-color: #ffffff;
+      background-image: linear-gradient(-227deg, #0e84ef 0%, #1ea9ff 100%);
+      p {
+        color: #ffffff;
+        font-family: "SofiaProSemiBold";
+      }
+      span {
+        opacity: 0.57;
+        color: #ffffff;
+      }
+      .rank-icon {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+
+.hint-window-cabinet {
+  background: rgba(22, 151, 247, 0.54);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.close-hint {
+  position: relative;
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.close-hint:before,
+.close-hint:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 33px;
+  width: 3px;
+  background-color: #ffffff;
+}
+
+.close-hint:before {
+  transform: rotate(45deg);
+}
+
+.close-hint:after {
+  transform: rotate(-45deg);
+}
+
+.arrow-box {
+  position: relative;
+  background: #ffffff;
+  z-index: 999999;
+  &-first {
+    width: 319px;
+    height: 130px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-right: 134px;
+    padding: 20px 20px 30px 25px;
+  }
+  &-second {
+    width: 254px;
+    height: 90px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 21px 31px 21px 21px;
+  }
+  &-third {
+    width: 413px;
+    height: 145px;
+    border-radius: 30px;
+    padding: 27px 21px 21px 21px;
+    margin-top: 183px;
+    margin-left: 121px;
+  }
+  .number-hint {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 3px 6px 1px rgba(22, 151, 247, 0.22);
+    background-color: #ffffff;
+    border-radius: 50px;
+    top: -22px;
+    left: 22px;
+    p {
+      color: #107ee9;
+      font-family: "SofiaProBold";
+      font-size: 16px;
+      text-align: center;
+      line-height: 36px;
+    }
+  }
+  p {
+    color: #131313;
+    font-family: "SofiaProRegular";
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+//arrow-box-first
+.arrow-box-first:after,
+.arrow-box-first:before {
+  bottom: 100%;
+  right: 0;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+}
+
+.arrow-box-first:after {
+  border-bottom-color: #ffffff;
+  border-width: 40px;
+  margin-left: -30px;
+  border-top: 0;
+  border-right: 0;
+}
+
+//arrow-box-second
+.arrow-box-second:after {
+  top: 100%;
+  right: 0;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+}
+
+.arrow-box-second:after {
+  border-top-color: #ffffff;
+  border-width: 30px;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+//arrow-box-third
+.arrow-box-third:after {
+  top: 100%;
+  right: 100px;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+}
+
+.arrow-box-third:after {
+  border-top-color: #ffffff;
+  border-width: 30px;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.wrapper-hint {
+  max-width: 1166px;
+  margin: 0 auto;
+  margin-top: 115px;
+  .first-hint {
+    display: flex;
+    justify-content: flex-end;
+    .white-button {
+      width: 132px;
+      height: 50px;
+      z-index: 999;
+      margin: 12px 368px 0 0;
+    }
+  }
+  .second-hint {
+    display: flex;
+    .white-button {
+      width: 161px;
+      height: 50px;
+      z-index: 999;
+      align-self: flex-end;
+    }
+  }
+  .third-hint {
+    display: flex;
+    .white-button {
+      width: 111px;
+      height: 50px;
+      z-index: 999;
+      align-self: flex-end;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .wrapper-hint {
+    padding: 0 40px;
+    .first-hint {
+      .arrow-box-first {
+        margin-right: 133px;
+      }
+    }
+    .second-hint {
+      .arrow-box-second {
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 0;
+        margin: 43px 0 0 175px;
+        &:after,
+        &:before {
+          top: -40px;
+          right: 0;
+          border: solid transparent;
+          content: " ";
+          position: absolute;
+        }
+        &:after {
+          border-bottom-color: #ffffff;
+          border-width: 40px;
+          margin-left: -30px;
+          border-top: 0;
+          border-right: 0;
+        }
+      }
+    }
+    .third-hint {
+      .arrow-box-third {
+        margin-top: 103px;
+        margin-left: 199px;
+      }
+    }
+  }
+  .personal-cabinet-coupon {
+    background: url(../img/BackGround-form.png) center center no-repeat;
+    background-position-x: 70%;
+    background-position-y: 81%;
+    .top-block-coupon {
+      .play-mode {
+        h2 {
+          font-size: 26px;
+        }
+      }
+      .left-img {
+        transform: rotate(1deg);
+        width: 244px;
+        height: 260px;
+        top: -8px;
+        left: -5%;
+      }
+      .right-img {
+        width: 245px;
+        height: 296px;
+        top: 4px;
+        right: -5%;
+      }
+    }
+    .container-cabinet-coupon {
+      width: 750px;
+      margin-top: 0;
+      padding-top: 88px;
+      .flex {
+        .your-coupons-and-rank {
+          p {
+            font-size: 37px;
+          }
+        }
+        .cabinet-coupon-info {
+          width: 376px;
+        }
+      }
+      .ranks {
+        width: 780px;
+        height: 190px;
+        margin: 3% auto;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        &-block {
+          margin-right: 35px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1138px) {
+  .personal-cabinet-coupon .top-block-coupon .left-img {
+    transform: rotate(3deg);
+    top: -4px;
+  }
+}
+
+@media all and (max-width: 1014px) {
+  .personal-cabinet-coupon .top-block-coupon .left-img {
+    top: 3px;
+  }
+  .wrapper-hint {
+    .first-hint .white-button {
+      margin-right: 190px;
+    }
+    .second-hint {
+      .arrow-box-second {
+        margin-left: 65px;
+      }
+    }
+    .third-hint .arrow-box-third {
+      margin-left: 65px;
+    }
+  }
+}
+
+@media all and (max-width: 790px) {
+  .wrapper-hint {
+    .second-hint {
+      .arrow-box-second {
+        margin-left: 15px;
+      }
+    }
+    .third-hint .arrow-box-third {
+      margin-left: 145px;
+      margin-top: 186px;
+    }
+  }
+  .personal-cabinet-coupon {
+    background: url(../img/BackGround-form_copy.png) center bottom no-repeat;
+    background-size: 100% 73%;
+    height: 948px;
+    .top-block-coupon {
+      .left-img,
+      .right-img {
+        display: none;
+      }
+    }
+    .container-cabinet-coupon {
+      width: 500px;
+      .flex .cabinet-coupon-info {
+        width: 230px;
+      }
+    }
+    .container-cabinet-coupon {
+      .ranks {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 728px) {
+  .wrapper-hint {
+    .close-hint {
+      display: none;
+    }
+    .first-hint {
+      .arrow-box-first {
+        margin-right: 30px;
+        margin-top: -32px;
+      }
+      .white-button {
+        margin-right: 30px;
+      }
+    }
+    .second-hint {
+      .arrow-box-second {
+        margin-top: 24px;
+        margin-left: 35px;
+        border-top-right-radius: 30px;
+        &:after,
+        &:before {
+          right: 60px;
+        }
+      }
+      .white-button {
+        margin-top: 125px;
+        margin-left: -250px;
+      }
+    }
+    .third-hint {
+      .arrow-box-third {
+        margin-left: 45px;
+        margin-top: 124px;
+      }
+      .white-button {
+        margin-top: 275px;
+        margin-left: -405px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 630px) {
+  .wrapper-hint .second-hint .arrow-box-second:after,
+  .wrapper-hint .second-hint .arrow-box-second:before {
+    right: 115px;
+  }
+}
+
+@media all and (max-width: 530px) {
+  .wrapper-hint {
+    .arrow-box p {
+      font-size: 13px;
+    }
+    .first-hint {
+      .arrow-box-first {
+        min-width: 320px;
+        height: 110px;
+        margin-right: -37px;
+        border-top-right-radius: 30px;
+        &:before,
+        &:after {
+          right: 70px;
+        }
+      }
+      .white-button {
+        margin-right: -35px;
+      }
+    }
+    .second-hint {
+      .arrow-box-second {
+        margin-top: 8px;
+      }
+    }
+    .third-hint {
+      .arrow-box-third {
+        max-width: 320px;
+        height: 152px;
+        margin-left: -35px;
+        margin-top: 284px;
+      }
+      .white-button {
+        margin-top: 440px;
+        margin-left: -318px;
+      }
+    }
+  }
+  .personal-cabinet-coupon {
+    background-size: 100% 78%;
+    height: 1155px;
+    .top-block-coupon {
+      .play-mode {
+        padding-top: 56px;
+        h2 {
+          width: 215px;
+          margin: 0 auto;
+          font-size: 19px;
+          line-height: 27px;
+        }
+        .play-mode-buttons {
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 320px;
+          margin-top: 20px;
+          .button-one-vs-one {
+            width: 113px;
+            height: 41px;
+            font-size: 13px;
+            line-height: 41px;
+            margin-left: 0;
+          }
+          .white-button-tournament {
+            display: inline-block;
+            width: 142px;
+            height: 40px;
+            font-size: 13px;
+            line-height: 40px;
+            margin-left: 0;
+            &:after {
+              display: none;
+            }
+          }
+          .mobile-text {
+            display: inline-block;
+            font-size: 13px;
+            color: #1279e9;
+            font-family: "SofiaPro";
+            margin-left: 10px;
+          }
+          div {
+            margin-top: 38px;
+          }
+        }
+      }
+    }
+    .container-cabinet-coupon {
+      width: 320px;
+      .flex {
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      .cabinet-coupon-info {
+        p {
+          text-align: center;
+          font-size: 11px;
+          line-height: 22px;
+        }
+      }
+      .white-button-use-them {
+        margin: 27px auto 60px;
+      }
+      .ranks {
+        width: 395px;
+        position: absolute;
+        left: 15px;
+      }
+    }
+  }
+  .modalDialogSettings {
+    .flex {
+      flex-wrap: wrap;
+      justify-content: center;
+      h4 {
+        padding: 10px 0;
+        &:first-child {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+        }
+      }
+    }
+    .closeSettings {
+      top: 13px;
+    }
+    .google-auth-name {
+      margin-top: 28px;
+    }
+    .btn-authentication {
+      flex-wrap: wrap;
+      justify-content: center;
+      a:first-child {
+        margin-bottom: 10px;
+      }
+    }
+    .apple-auth {
+      margin-bottom: 10px;
+    }
+  }
+  .modalDialogSettings > div {
+    width: 300px;
+    height: auto;
+    padding: 17px 14px 25px 14px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .personal-cabinet-coupon .container-cabinet-coupon .ranks {
+    width: 345px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .personal-cabinet-coupon .container-cabinet-coupon .ranks {
+    width: 305px;
+  }
+  .wrapper-hint {
+    .second-hint {
+      .arrow-box-second {
+        margin-left: -25px;
+        &:before,
+        &:after {
+          right: 125px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.registration-main {
+  .container-cabinet {
+    .wrapper {
+      .withdrawal {
+        h4 {
+          padding-bottom: 40px;
+        }
+        .your-balance {
+          color: #ffffff;
+          font-size: 38px;
+          margin: 30px 0;
+          text-shadow: 0 0 27px #ffffff;
+        }
+        .amount-withdrawal {
+          width: 475px;
+          margin: 23px 0 53px 0;
+          p {
+            white-space: nowrap;
+          }
+        }
+        p {
+          font-size: 19px;
+          span {
+            font-size: 22px;
+            color: #ffffff;
+            line-height: 65px;
+            font-weight: bold;
+          }
+        }
+        input {
+          width: 104px;
+        }
+        label {
+          font-family: "SofiaProRegular";
+          font-size: 21px;
+          padding: 0 25px 0 64px;
+        }
+        .white-button {
+          width: 149px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  .registration-main {
+    .container-cabinet {
+      .wrapper {
+        .withdrawal {
+          width: 535px;
+          .amount-withdrawal {
+            margin: 23px auto 53px auto;
+          }
+          p {
+            text-align: center;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+  #withdrawal-bg {
+    min-height: 720px;
+    background-size: cover;
+    background-position: 25%;
+  }
+}
+
+@media all and (max-width: 780px) {
+  .registration-main .container-cabinet .wrapper .withdrawal p {
+    width: auto;
+  }
+}
+
+@media all and (max-width: 660px) {
+  .registration-main .container-cabinet .wrapper .withdrawal {
+    width: 485px;
+    .amount-withdrawal {
+      width: 350px;
+      margin: 23px auto;
+      input {
+        width: 64px;
+        height: 42px;
+      }
+      label {
+        padding: 0 0 0 20px;
+      }
+      .white-button {
+        margin-left: 0;
+      }
+    }
+    p {
+      font-size: 16px;
+      span {
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 421px) {
+  .registration-main .container-cabinet .wrapper .withdrawal {
+    .amount-withdrawal {
+      width: 320px;
+      label {
+        padding: 0 0 0 10px;
+      }
+    }
+    .white-button {
+      width: 114px;
+      height: 41px;
+      line-height: 41px;
+      margin-left: 0;
+    }
+    p {
+      font-size: 14px;
+      span {
+        font-size: 13px;
+      }
+    }
+  }
+}

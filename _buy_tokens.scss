@@ -1,0 +1,369 @@
+.buy-tokens-bg {
+  min-height: 1047px;
+  .container-cabinet {
+    .wrapper {
+      .buy-tokens {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+
+        .flex {
+          justify-content: flex-start;
+          .hide-left-img-buy-tokens img,
+          .hide-right-img-buy-tokens img {
+            display: none;
+          }
+        }
+
+        .purchase-details {
+          //width: 638px;
+          display: flex;
+          justify-content: space-between;
+          .minimum-purchase-mobile {
+            display: none;
+          }
+        }
+
+        .left-block {
+          .choose-currency {
+            display: flex;
+            justify-content: center;
+            margin: 65px 0 15px 0;
+          }
+        }
+
+        .right-block {
+          width: 345px;
+          img {
+            width: 400px;
+            height: 500px;
+          }
+        }
+        .buy-token-block {
+          width: 158px;
+          height: 158px;
+          border-radius: 8px;
+          border: 1px solid rgba(214, 214, 214, 0.56);
+          background-color: #ffffff;
+          cursor: pointer;
+          position: relative;
+          &:first-child {
+            margin: 0 22px 30px 0;
+          }
+          &::before {
+            background: url(../img/buy-bg.png) center center no-repeat;
+            border: none;
+            content: "";
+            opacity: 0;
+            border-radius: 8px;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            z-index: 0;
+            /* TRANSISITION */
+            transition: opacity 0.3s ease-in-out;
+            -webkit-transition: opacity 0.3s ease-in-out;
+            -moz-transition: opacity 0.3s ease-in-out;
+            -o-transition: opacity 0.3s ease-in-out;
+          }
+          &:hover::before {
+            opacity: 1;
+          }
+          &:hover p {
+            color: #ffffff;
+            position: relative;
+            z-index: 99;
+          }
+          p {
+            color: #000000;
+            font-family: "SofiaPro";
+          }
+        }
+        img {
+          width: 39px;
+          height: 54px;
+          margin: 35px 0 25px 0;
+        }
+
+        .purchase-details-input {
+          width: 314px;
+          z-index: 1;
+          margin-bottom: 17px;
+          //color: #000000;
+          font-family: "SofiaProRegular";
+        }
+        label {
+          color: #000000;
+          margin-left: -72px;
+          margin-bottom: 5px;
+          border-left: 1px solid #a6a6a6;
+          padding: 10px 20px;
+          z-index: 999;
+        }
+        .white-button {
+          width: 109px;
+          height: 50px;
+          line-height: 50px;
+          color: #107ee9;
+          font-family: "SofiaProSemiBold";
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+.purchase-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  span {
+    font-size: 21px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+  p {
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: "SofiaProRegular";
+    font-size: 16px;
+    line-height: 44px;
+  }
+  input {
+    margin-top: 10px;
+  }
+  // .bonus-purchase-block {
+  //   position: relative;
+  //   i {
+  //     position: absolute;
+  //     top: -10px;
+  //     right: -10px;
+  //     color: #ffffff;
+  //     opacity: 0.67;
+  //   }
+  // }
+  .payment-adress-input {
+    width: 459px;
+    color: #000000;
+    font-family: "SofiaProRegular";
+  }
+}
+.bonus-info {
+  h3 {
+    text-align: center;
+  }
+  a {
+    margin-left: 0px;
+  }
+}
+.payment-adress {
+  margin: 45px 0 15px 0;
+}
+
+.buy-token-block {
+  z-index: 999;
+  .crypto-icon {
+    width: 39px;
+    height: 54px;
+    margin: 35px 59px 30px 59px;
+  }
+  //bitcoin
+  .bitcoin-icon {
+    background: url(../img/bitcoin.png) center center no-repeat;
+    background-size: contain;
+  }
+  &:hover .bitcoin-icon {
+    background: url(../img/bitcoin-w.png) center center no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 99;
+  }
+
+  //etherium
+  .etherium-icon {
+    background: url(../img/etherium.png) center center no-repeat;
+    background-size: contain;
+  }
+  &:hover .etherium-icon {
+    background: url(../img/etherium-w.png) center center no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 99;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .buy-tokens-bg .container-cabinet .wrapper .buy-tokens {
+    .right-block {
+      display: none;
+    }
+
+    .flex {
+      justify-content: center;
+      .hide-left-img-buy-tokens img,
+      .hide-right-img-buy-tokens img {
+        display: block;
+      }
+
+      .hide-left-img-buy-tokens img,
+      .hide-right-img-buy-tokens img {
+        width: 236px;
+        height: 298px;
+      }
+
+      .hide-left-img-buy-tokens {
+        position: absolute;
+        top: 10%;
+        left: -5%;
+      }
+
+      .hide-right-img-buy-tokens {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        overflow: hidden;
+        img {
+          margin-left: 20%;
+        }
+      }
+    }
+
+    .purchase-details-input {
+      width: 294px;
+    }
+  }
+}
+@media all and (max-width: 660px) {
+  .buy-tokens-bg .container-cabinet .wrapper .buy-tokens {
+    .flex {
+      .hide-left-img-buy-tokens img,
+      .hide-right-img-buy-tokens img {
+        display: none;
+      }
+    }
+    .left-block {
+      position: relative;
+
+      .payment-adress {
+        text-align: left;
+      }
+
+      .purchase-flex {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .bonus-info {
+        .equally {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .purchase-details-input {
+        width: 100%;
+      }
+      // .minimum-purchase {
+      //   position: absolute;
+      //   bottom: 44%;
+      //   right: 0;
+      // }
+      .purchase-details {
+        .minimum-purchase-mobile {
+          display: block;
+        }
+      }
+      .minimum-purchase {
+        display: none;
+      }
+      .payment-adress-input {
+        width: 260px;
+      }
+    }
+  }
+}
+@media all and (max-width: 440px) {
+  .buy-tokens-bg {
+    min-height: 750px;
+    background-size: cover;
+    background-position: 30%;
+  }
+  .buy-tokens-bg .container-cabinet .wrapper .buy-tokens {
+    .flex {
+      margin: 0;
+    }
+
+    .left-block {
+      width: 320px;
+      margin: 0 auto;
+
+      .purchase-details-input {
+        width: 100%;
+      }
+
+      .payment-adress-input {
+        width: 175px;
+        height: 42px;
+      }
+
+      .white-button-arrow {
+        width: 90px;
+        height: 41px;
+        line-height: 41px;
+      }
+
+      .copy-payment-address {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .payment-adress-input {
+          height: 50px;
+        }
+      }
+    }
+
+    .buy-token-block {
+      width: 110px;
+      height: 110px;
+      .crypto-icon {
+        width: 28px;
+        height: 37px;
+        margin: 23px 0px 16px 40px;
+      }
+    }
+  }
+}
+@media all and (max-width: 320px) {
+  .buy-tokens-bg .container-cabinet .wrapper {
+    width: 310px;
+    margin: 0 auto;
+    .buy-tokens {
+      .left-block {
+        width: 320px;
+
+        .flex {
+          .choose-currency {
+            margin: 25px 0 10px 0;
+          }
+        }
+
+        .purchase-details-input {
+          width: 280px;
+        }
+
+        .purchase-details {
+          .minimum-purchase-mobile {
+            font-size: 11px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

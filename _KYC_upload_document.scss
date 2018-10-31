@@ -1,0 +1,95 @@
+.registration-main {
+  .container-cabinet {
+    .wrapper {
+      .KYC-second-step {
+        form {
+          width: 637px;
+          .upload-passport {
+            margin: 40px 0 48px 0;
+            width: 637px;
+          }
+          .flex {
+            justify-content: space-between;
+            margin-bottom: 20px;
+          }
+          p {
+            display: inline-block;
+            line-height: 25px;
+            font-size: 14px;
+          }
+          .white-button-select-files {
+            display: inline-block;
+            width: 149px;
+            height: 50px;
+          }
+          .white-button-upload {
+            display: block;
+            margin: 35px auto 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .registration-main .container-cabinet .wrapper .KYC-second-step {
+    //width: 535px;
+    h3 {
+      width: 635px;
+      margin: 0 auto;
+    }
+    h4 {
+      width: 522px;
+    }
+    form {
+      width: 635px;
+      margin: 0 auto;
+      .upload-passport {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 660px) {
+  .registration-main .container-cabinet .wrapper .KYC-second-step {
+    width: 404px;
+    h3 {
+      width: 404px;
+    }
+    h4 {
+      width: 404px;
+    }
+    form {
+      width: 404px;
+      .upload-passport {
+        width: 404px;
+      }
+
+      .flex p {
+        text-align: left;
+      }
+
+      .flex .white-button-select-files {
+        display: block;
+        margin: 20px auto 0;
+      }
+    }
+  }
+}
+@media (max-width: 410px) {
+  .registration-main .container-cabinet .wrapper .KYC-second-step {
+    width: 320px;
+    h3 {
+      width: 320px;
+    }
+    h4 {
+      width: 320px;
+    }
+    form {
+      width: 320px;
+      .upload-passport {
+        width: 310px;
+      }
+    }
+  }
+}

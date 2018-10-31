@@ -1,0 +1,104 @@
+.registration-main {
+  .container-cabinet {
+    .wrapper {
+      .withdrawal-success {
+        //width: 438px;
+        h2 {
+          width: 438px;
+        }
+        h4 {
+          line-height: 2;
+        }
+        .white-button {
+          width: 175px;
+          height: 50px;
+          margin: 35px 0 0 0;
+          font-family: "SofiaProSemiBold";
+        }
+        .hide-left-img-w_success,
+        .hide-right-img-w_success {
+          display: none;
+        }
+      }
+      .withdrawal-success-img {
+        //width: 50%;
+        //width: 899px;
+        height: 511px;
+        img {
+          width: 794px;
+          height: 495px;
+          margin-left: -150px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .registration-main .wrapper.wrapper-wallet {
+    justify-content: center;
+  }
+  .registration-main
+    .container-cabinet
+    .wrapper
+    .withdrawal-success
+    .white-button {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media all and (max-width: 1060px) {
+  .withdrawal-success-img {
+    display: none;
+  }
+  .withdrawal-success-small {
+    min-height: 674px;
+    background-size: cover;
+    background-position: 30%;
+  }
+  .registration-main {
+    .container-cabinet {
+      .wrapper {
+        .withdrawal-success {
+          display: flex;
+          justify-content: center;
+          .hide-left-img-w_success,
+          .hide-right-img-w_success {
+            display: block;
+            img {
+              width: 264px;
+              height: 367px;
+            }
+          }
+          .hide-left-img-w_success {
+            position: absolute;
+            margin-left: -46%;
+          }
+          .hide-right-img-w_success {
+            position: absolute;
+            margin-left: 46%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 680px) {
+  .registration-main {
+    .container-cabinet {
+      .wrapper {
+        .withdrawal-success {
+          .hide-left-img-w_success,
+          .hide-right-img-w_success {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .withdrawal-success-small {
+    min-height: 384px;
+  }
+}

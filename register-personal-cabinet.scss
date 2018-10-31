@@ -1,0 +1,149 @@
+.register-personal-cabinet {
+  padding-top: 75px;
+
+  .checkbox {
+    display: flex;
+    margin-bottom: 29px;
+    width: 420px;
+    text-align: left;
+
+    .checkbox-input {
+      display: block;
+      margin-top: 4px;
+      width: 15px;
+      height: 15px;
+      text-align: left;
+      margin-right: 10px;
+      padding-right: 0;
+    }
+    label {
+      display: block;
+    }
+
+    label,
+    label a {
+      opacity: 0.8;
+      color: #ffffff;
+      font-family: "SofiaProRegular";
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+    a {
+      margin: 0;
+    }
+  }
+}
+.log-in {
+  .white-button {
+    color: #1ea9ff;
+    font-size: 16px;
+    line-height: 47px;
+    font-family: "SofiaProSemiBold";
+  }
+}
+#log-in {
+  white-space: nowrap;
+}
+
+@media all and (max-width: 728px) {
+  .personal.flex {
+    .settings {
+      position: absolute;
+      top: 15px;
+      right: 63px;
+      filter: invert(1);
+      z-index: 999999999;
+    }
+  }
+  .personal-cabinet-game {
+    .header-flex {
+      .right-block-header {
+        margin: 0 auto;
+        .custom-select {
+          height: auto;
+        }
+      }
+
+      .logo-right-display {
+        display: block;
+      }
+
+      .custom-select-display.sources {
+        display: inline-block;
+      }
+
+      .personal {
+        width: auto;
+        .register {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .mobile-menu-personal-cabinet {
+      top: 35px;
+    }
+
+    .mobile-menu__container .custom-select-wrapper {
+      top: 25px;
+    }
+  }
+}
+@media all and (max-width: 570px) {
+  .personal-cabinet-game {
+    .header-flex {
+      .logo-right-display {
+        display: none;
+      }
+
+      .right-block-header {
+        margin: 0;
+      }
+    }
+  }
+}
+@media all and (max-width: 730px) {
+  .left-img-log_in,
+  .right-img-log_in {
+    display: none;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .personal-cabinet-game {
+    .custom-select-wrapper {
+      display: none;
+    }
+    .mobile-menu__container .custom-select-wrapper {
+      display: block;
+      top: 25px;
+    }
+    .header-flex .right-block-header {
+      margin: 0 auto;
+    }
+  }
+
+  .log-in input {
+    width: 290px;
+    height: 40px;
+  }
+  .register-personal-cabinet .checkbox {
+    width: 290px;
+
+    .checkbox-input {
+      width: 12px;
+      height: 12px;
+      margin-right: 5px;
+    }
+
+    label,
+    label a {
+      font-size: 11px;
+    }
+  }
+
+  .log-in .password-log_in i.fas {
+    top: 14px;
+  }
+}

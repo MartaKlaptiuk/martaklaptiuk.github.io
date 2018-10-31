@@ -1,0 +1,372 @@
+.white-button {
+  display: block;
+  text-align: center;
+  line-height: 52px;
+  box-shadow: 0 7px 12px 1px rgba(18, 64, 107, 0.06);
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #008dfe;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 3px 6px 1px rgba(18, 64, 107, 0.13), inset 0 2px 0 #58b9ff;
+    border-radius: 25px;
+    background-color: #008dfe;
+    color: #ffffff;
+  }
+}
+
+.registration-main {
+  background: url("../img/Banner_form_big.png") center center no-repeat;
+  background-size: 100% 100%;
+  min-height: 910px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+  }
+  .welcome {
+    width: 579px;
+    color: #ffffff;
+    text-align: left;
+    h2 {
+      padding: 59px 0 40px 0;
+      text-align: left;
+      font-family: "SofiaProSemiBold";
+    }
+    p {
+      font-size: 21px;
+      line-height: 41px;
+      font-family: "SofiaProRegular";
+    }
+    img {
+      width: 632px;
+      height: 359px;
+      margin-top: 53px;
+    }
+  }
+  .mobile-register-flex {
+    width: 485px;
+  }
+  .register-form {
+    //width: 478px;
+    min-height: 632px;
+    padding: 50px 31px 45px 31px;
+    box-shadow: 0 9px 43px rgba(14, 19, 115, 0.22),
+      inset 0 0 28px 2px rgba(73, 123, 211, 0.14);
+    background-image: linear-gradient(
+      -234deg,
+      #1490f4 0%,
+      #0a94fa 51%,
+      #0098ff 100%
+    );
+    .register-login {
+      text-align: center;
+      margin-bottom: 35px;
+      p:first-child {
+        margin-right: 80px;
+      }
+    }
+    p {
+      width: 95px;
+      height: 26px;
+      display: inline-block;
+      text-align: center;
+      opacity: 0.63;
+      color: #ffffff;
+      font-family: "SofiaProSemiBold";
+      font-size: 23px;
+      cursor: pointer;
+    }
+    .active-reg {
+      opacity: 1;
+      color: #ffffff;
+      font-size: 26px;
+    }
+    .btn-forgot-password {
+      display: block;
+      text-align: center;
+      color: #ffffff;
+      font-family: "SofiaProRegular";
+      font-size: 16px;
+      margin: 45px 0 35px 0;
+    }
+    // .form-login {
+    //   margin-top: 30px;
+    // }
+    form {
+      input {
+        display: block;
+        width: 100%;
+        height: 55px;
+        color: #6f6f6f;
+        font-family: "SofiaProRegular";
+        font-size: 16px;
+        margin-bottom: 26px;
+        position: relative;
+        // &[type="password"] {
+        //   margin-bottom: 40px;
+        // }
+        &[type="email"] {
+          //margin-top: -20px;
+        }
+      }
+
+      .error-found {
+        width: 100%;
+        margin-bottom: -20px;
+        //margin-bottom: 20px;
+        //border: 1px solid black;
+        //min-height: 135px;
+
+        .error-text {
+          width: 100%;
+          height: auto;
+          font-size: 16px;
+          color: #ffffff;
+          padding: 10px 20px;
+          background: #f55;
+          opacity: 1;
+        }
+      }
+      ul {
+        li {
+          color: #ffffff;
+          font-family: "SofiaProRegular";
+          padding: 10px 7px 5px 7px;
+        }
+      }
+    }
+
+    .checkbox {
+      margin-bottom: 29px;
+      label,
+      label a {
+        opacity: 0.8;
+        color: #ffffff; //font-family: "SofiaProRegular";
+        font-size: 16px;
+        line-height: 25px;
+        margin-left: 0;
+      }
+      input {
+        width: 13px;
+        height: 13px;
+        display: inline-block;
+        margin: 0;
+      }
+    }
+    .register-button {
+      display: block;
+      margin: 0 auto;
+      button {
+        width: 156px;
+        height: 52px;
+        color: #1ea9ff;
+        font-size: 16px;
+        font-family: "SofiaProSemiBold";
+        border: none;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+.password-log_in {
+  position: relative;
+  input {
+    padding: 0 45px 0 20px;
+  }
+  i.fas {
+    width: 26px;
+    height: 26px;
+    color: #6f6f6f;
+    text-align: center;
+    right: 13px;
+    top: 21px;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+.footer-registration {
+  .social {
+    margin-top: 5%;
+    .icons {
+      border: 2px solid #008dfd;
+      &:hover {
+        box-shadow: 0 0 16px 2px rgba(11, 189, 255, 0.7);
+        background-color: #008dfd;
+        & i {
+          color: #ffffff;
+        }
+      }
+      i {
+        color: #008dfd;
+      }
+    }
+  }
+  .logo {
+    margin-bottom: 17px;
+  }
+  a,
+  p {
+    color: #3e3e3e;
+    text-align: center;
+  }
+}
+
+.footer-info .container-cabinet .flex {
+  border-bottom: 1px solid #cbccce;
+}
+
+.footer-flex {
+  a:not(:last-child) {
+    position: relative;
+    padding-bottom: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #1ea9ff;
+      transition: all 0.2s;
+      transform: scaleX(0);
+    }
+    &:hover {
+      color: #1ea9ff;
+      &::before {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.hide-left-img-register img,
+.hide-right-img-register img {
+  display: none;
+}
+.registration-main .form-forgot-password {
+  //width: 338px;
+  h2 {
+    color: #ffffff;
+    font-size: 26px;
+  }
+  p {
+    color: #ffffff;
+    opacity: 1;
+    width: 100%;
+    font-family: "SofiaProRegular";
+    font-size: 15px;
+    margin: 39px 0 45px 0;
+    line-height: 28px;
+  }
+}
+
+@media all and (max-width: 1165px) {
+  .registration-main .wrapper {
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 1060px) {
+  .registration-main {
+    min-height: 874px;
+    background-size: cover;
+    background-position: 30%;
+    overflow: hidden;
+    .wrapper {
+      padding-top: 0;
+      flex-wrap: wrap;
+    }
+    .welcome {
+      h2,
+      p {
+        text-align: center;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 15px;
+      }
+      img {
+        display: none;
+      }
+    }
+    .mobile-register-flex {
+      display: flex;
+      justify-content: center;
+      .hide-left-img-register img,
+      .hide-right-img-register img {
+        display: block;
+        width: 264px;
+        height: 367px;
+      }
+      .hide-left-img-register {
+        position: absolute;
+        margin-left: -50%;
+      }
+      .hide-right-img-register {
+        position: absolute;
+        margin-left: 49%;
+      }
+    }
+    .register-form {
+      box-shadow: none;
+      background-image: none;
+      width: 416px;
+      z-index: 999;
+    }
+  }
+  .footer-cabinet {
+    margin-top: 0;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .registration-main {
+    .welcome {
+      h2 {
+        font-size: 19px;
+      }
+      p {
+        line-height: 27px;
+      }
+    }
+  }
+  .hide-left-img-register,
+  .hide-right-img-register {
+    display: none;
+  }
+  .footer-cabinet .social {
+    .flex {
+      width: 320px;
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        margin-top: 20px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .footer-cabinet .social .flex .footer-flex a:last-child {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .registration-main .register-form {
+    width: 370px;
+  }
+  .footer-registration {
+    width: 320px;
+    margin: 0 auto;
+    .footer-info {
+      margin-top: 10px;
+    }
+  }
+}

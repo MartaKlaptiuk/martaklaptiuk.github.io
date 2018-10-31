@@ -1,0 +1,174 @@
+.opponents-found {
+  padding: 65px 40px 0 40px;
+  h3 {
+    font-family: "SofiaPro";
+  }
+  h4 {
+    margin: 40px 0;
+  }
+  p {
+    font-size: 16px;
+    b {
+      font-size: 21px;
+    }
+  }
+  .warriors,
+  .position,
+  .seconds-block {
+    p {
+      font-size: 37px;
+    }
+    span {
+      font-size: 16px;
+      font-family: "SofiaProRegular";
+      line-height: 32px;
+      color: #cceaff;
+    }
+  }
+  .you-have-block {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .seconds-block {
+    display: flex;
+    justify-content: space-between;
+    width: 1075px;
+    div {
+      width: 185px;
+    }
+  }
+  .instruction {
+    color: #ffffff;
+    font-family: "SofiaPro";
+    padding: 76px 0 44px 0;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .white-button-lets-start {
+    width: 153px;
+    height: 52px;
+    margin-top: 30px;
+  }
+}
+
+.bg-opponents-found {
+  background: url(../img/Ellements2.png) center left no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 97%;
+  z-index: 1;
+  background-size: 100% 80%;
+}
+.opponents-found {
+  img {
+    &:nth-child(3) {
+      margin-top: 47%;
+    }
+    &:nth-child(6) {
+      margin-top: 47%;
+    }
+  }
+}
+@media all and (max-width: 1100px) {
+  .registration-main {
+    min-height: 974px;
+    background-size: cover;
+    background-position: 30%;
+  }
+  .bg-opponents-found {
+    background-size: 127% 60%;
+    background-position-x: center;
+  }
+  .opponents-found .seconds-block {
+    justify-content: center;
+    max-width: 975px;
+    div {
+      margin: 20px 15px;
+    }
+  }
+}
+
+@media all and (max-width: 850px) {
+  .bg-opponents-found {
+    background-size: 135% 46%;
+  }
+  .opponents-found {
+    padding: 45px 10px 0 10px;
+    .flex {
+      padding-top: 55px;
+      h3 {
+        font-size: 24px;
+      }
+    }
+    .you-have-block {
+      max-width: 460px;
+    }
+    .seconds-block {
+      max-width: 460px;
+      flex-wrap: wrap;
+      div {
+        margin-top: 20px;
+      }
+    }
+    .warriors,
+    .position,
+    .seconds-block {
+      p {
+        font-size: 27px;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .instruction {
+      font-size: 12px;
+      line-height: 19px;
+      padding-top: 25px;
+    }
+  }
+  .opponents-found {
+    img {
+      &:nth-child(3) {
+        margin-top: 90%;
+      }
+      &:nth-child(6) {
+        margin-top: 57%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 495px) {
+  .bg-opponents-found {
+    display: none;
+  }
+  .opponents-found {
+    .you-have-block {
+      max-width: 300px;
+      p {
+        font-size: 20px;
+      }
+      span {
+        font-size: 9px;
+      }
+    }
+    .seconds-block {
+      max-width: 320px;
+    }
+    .seconds-block {
+      p {
+        font-size: 37px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+    .instruction {
+      padding-top: 26px;
+    }
+  }
+}
